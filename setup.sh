@@ -28,4 +28,21 @@ sudo snap install --classic code
 sudo --install-extension hilalh.hyper-dracula-vscode-theme
 
 
+# Nerd fonts
+sudo apt install -y fonts-firacode || true
+wget -q https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+unzip -o JetBrainsMono.zip -d ~/.local/share/fonts
+fc-cache -f -v
+
+# oh-my-posh
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
+
+
+
+
+
+
+
 cp . bashrc ~
+cp code.settings.json ~/.config/Code/User/settings.json

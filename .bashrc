@@ -119,12 +119,17 @@ fi
 
 . "$HOME/.local/bin/env"
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-neofetch
 
+#oh-my-posh
+eval "$(oh-my-posh init bash)"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 gp() {
     git add -A
     git commit -m "$1"
     git push
 }
+
+
+neofetch
